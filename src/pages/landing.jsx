@@ -182,28 +182,28 @@ export default function Landing() {
             />
           </div>
 
-          {/* Hover Sections */}
-          <div className="absolute top-0 left-0 w-full h-full flex z-10 text-white font-bold text-2xl">
+          {/* Hover Sections - Responsive */}
+          <div className="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row z-10 text-white font-bold text-lg sm:text-xl md:text-2xl">
             <div
-              className="flex-1 border-r border-white flex items-center justify-center cursor-pointer group relative"
+              className="flex-1 border-b md:border-b-0 md:border-r border-white flex items-center justify-center cursor-pointer group relative min-h-[33.33vh] md:min-h-full"
               onMouseEnter={() => setCurrentVideo("car")}
             >
-              <span className="z-20">VEHICLES</span>
+              <span className="z-20 text-center px-4">VEHICLES</span>
               {/* Blur overlay */}
               <div className="absolute inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500"></div>
             </div>
             <div
-              className="flex-1 border-r border-white flex items-center justify-center cursor-pointer group relative"
+              className="flex-1 border-b md:border-b-0 md:border-r border-white flex items-center justify-center cursor-pointer group relative min-h-[33.33vh] md:min-h-full"
               onMouseEnter={() => setCurrentVideo("charger")}
             >
-              <span className="z-20">CHARGING</span>
+              <span className="z-20 text-center px-4">CHARGING</span>
               <div className="absolute inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500"></div>
             </div>
             <div
-              className="flex-1 flex items-center justify-center cursor-pointer group relative"
+              className="flex-1 flex items-center justify-center cursor-pointer group relative min-h-[33.33vh] md:min-h-full"
               onMouseEnter={() => setCurrentVideo("electricity")}
             >
-              <span className="z-20">POWER</span>
+              <span className="z-20 text-center px-4">POWER</span>
               <div className="absolute inset-0 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-500"></div>
             </div>
           </div>
